@@ -1,0 +1,11 @@
+sudo: required # Sudo required tells Travis that we need superuser permissions to run this build
+language: generic
+
+services:
+  - docker # Tells Travis to install docker
+
+before_install: # Series of command before the build is run
+  - docker build -t trentgillis/docker-react -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true trentgillis/docker-react npm run test -- --coverage
