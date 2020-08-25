@@ -22,3 +22,12 @@ deploy:
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
   
+
+
+
+access_key_id: $AWS_ACCESS_KEY
+secret_access_key: $AWS_SECRET_KEY
+
+AKIAWGHDCEL67SJW3QIM -- access key id
+
+VGyRoQGB2Zne9e8wnFf9myodUjm3kso/yP4dv/aP -- secret access key
